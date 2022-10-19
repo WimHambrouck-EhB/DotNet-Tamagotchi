@@ -15,6 +15,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TamaLib\TamaLib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Resources\tamagotchi.png" />
     <Resource Include="Resources\tamagotchi_dood.png" />
     <Resource Include="Resources\tamagotchi_ei.png" />

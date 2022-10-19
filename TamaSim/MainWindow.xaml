@@ -16,8 +16,8 @@
         <Label x:Name="lblGeluk" Content="4" HorizontalAlignment="Left" Margin="117,217,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblHonger" Content="4" Margin="117,248,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="16"/>
         <Label x:Name="lblIntelligentie" Content="4" Margin="117,279,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="16"/>
-        <Button x:Name="btnSpelen" Content="_Spelen" Margin="10,310,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="59" Click="btnSpelen_Click" />
-        <Button x:Name="btnEten" Content="_Eten" Margin="95,310,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="60" Click="btnEten_Click"/>
-        <Button x:Name="btnLeren" Content="_Leren" Margin="172,310,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="60" Click="btnLeren_Click"/>
+        <Button x:Name="btnSpelen" Content="_Spelen" Margin="10,310,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="59" Click="BtnSpelen_Click" />
+        <Button x:Name="btnEten" Content="_Eten" Margin="95,310,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="60" Click="BtnEten_Click"/>
+        <Button x:Name="btnLeren" Content="_Leren" Margin="172,310,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="60" Click="BtnLeren_Click"/>
     </Grid>
 </Window>

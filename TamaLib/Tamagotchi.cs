@@ -1,20 +1,9 @@
 ﻿using System;
 using System.Timers;
 
-namespace TamaSim
+namespace TamaLib
 {
-    enum Levensstadium 
-    {
-        Ei,
-        Baby,
-        Kind,
-        Puber,
-        Volwassen,
-        Senior,
-        Dood
-    }
-
-    class Tamagotchi
+    public class Tamagotchi
     {
         private readonly Timer timer;
         private Levensstadium vorigLevensstadium;
@@ -167,14 +156,14 @@ namespace TamaSim
         /// </summary>        
         private void IsLevensstadiumVeranderd(object sender, ElapsedEventArgs e)
         {
-            if(Levensstadium != vorigLevensstadium)
+            if (Levensstadium != vorigLevensstadium)
             {
                 vorigLevensstadium = Levensstadium;
-                if(vorigLevensstadium == Levensstadium.Dood)
+                if (vorigLevensstadium == Levensstadium.Dood)
                 {
                     timer.Stop();
                 }
-               
+
                 if (LevensstadiumChangedEvent != null)
                 {
                     LevensstadiumChangedEvent(Levensstadium);

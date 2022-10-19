@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Windows;
 using System.Windows.Media.Imaging;
+using TamaLib;
 
 namespace TamaSim
 {
@@ -33,6 +34,7 @@ namespace TamaSim
             seniorImage = InitImage(Properties.Resources.tamagotchi);
             doodImage = InitImage(Properties.Resources.tamagotchi_dood);
 
+            // naam vragen in apart venster en resultaat hier opvangen
             NameWindow nameWindow = new NameWindow();
 
             if (nameWindow.ShowDialog().GetValueOrDefault())
@@ -65,6 +67,9 @@ namespace TamaSim
             return image;
         }
 
+        /// <summary>
+        /// Event handler voor LevensstadiumChangedEvent
+        /// </summary>
         private void Tamagotchi_LevensstadiumChangedEvent(Levensstadium levensstadium)
         {
             // als de cases van een switch niet veel code bevatten (in dit geval enkel een toewijzing aan newImage), kan je de switch sinds C# 8 als expression schrijven en het resultaat hiervan opvangen in een variabele
@@ -97,6 +102,9 @@ namespace TamaSim
             });
         }
 
+        /// <summary>
+        /// Event handler voor ParameterChangedEvent
+        /// </summary>
         private void Tamagotchi_ParameterChangedEvent()
         {
             Dispatcher.Invoke(() => UpdateGUI());
@@ -111,19 +119,28 @@ namespace TamaSim
             lblIntelligentie.Content = tamagotchi.Intelligentie;
         }
 
-        private void btnSpelen_Click(object sender, RoutedEventArgs e)
+        /// <summary>
+        /// Event handler voor Click-event van Button "Spelen"
+        /// </summary>
+        private void BtnSpelen_Click(object sender, RoutedEventArgs e)
         {
             tamagotchi.Geluk++;
             UpdateGUI();
         }
 
-        private void btnEten_Click(object sender, RoutedEventArgs e)
+        /// <summary>
+        /// Event handler voor click-event van Button "Eten"
+        /// </summary>
+        private void BtnEten_Click(object sender, RoutedEventArgs e)
         {
             tamagotchi.Honger++;
             UpdateGUI();
         }
 
-        private void btnLeren_Click(object sender, RoutedEventArgs e)
+        /// <summary>
+        /// Event handler voor click-event van Button "Leren"
+        /// </summary>
+        private void BtnLeren_Click(object sender, RoutedEventArgs e)
         {
             tamagotchi.Intelligentie++;
             UpdateGUI();
