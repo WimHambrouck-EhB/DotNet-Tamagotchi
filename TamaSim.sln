@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29403.142
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TamaSim", "TamaSim\TamaSim.csproj", "{332BE2CF-B5B8-4813-89CE-6450B4AE60F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{332BE2CF-B5B8-4813-89CE-6450B4AE60F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{332BE2CF-B5B8-4813-89CE-6450B4AE60F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{332BE2CF-B5B8-4813-89CE-6450B4AE60F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{332BE2CF-B5B8-4813-89CE-6450B4AE60F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3B3ED5C-284A-4BAC-A127-FB156E8BA6F0}
+	EndGlobalSection
+EndGlobal
